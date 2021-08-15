@@ -1,0 +1,22 @@
+site_name: Syntax
+theme: readthedocs
+
+# Pages
+nav:
+- Template Literal : template-literal.md
+- Operator Ternary : operator-ternary.md
+- Length : length.md
+- Map : map.md
+- Filter : filter.md
+- Reverse : reverse.md
+- Sum dan Reduce : sum-reduce.md
+- Push dan Pop : push-pop.md
+- Split dan Join : split-join.md
+- Slice dan Splice : slice-splice.md
+- Min dan Max : min-max.md
+- String dan Number : string-number.md
+- Upper dan Lower : upper-lower.md
+
+
+# Copyright
+copyright: '&copy; All Rights Reserved by Sulton Muhajir'
