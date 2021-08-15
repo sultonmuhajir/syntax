@@ -3,7 +3,7 @@ theme: readthedocs
 
 # Pages
 nav:
-- Template Literal : template-literal.md
+- Template Literal : index.md
 - Operator Ternary : operator-ternary.md
 - Length : length.md
 - Map : map.md
