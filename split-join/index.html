@@ -155,23 +155,23 @@ xJoin(['js', 'php', 'py'])   // js php py
 </code></pre>
 <p><br/></p>
 <h5 id="php">PHP</h5>
-<pre><code class="language-php">function xSplit($xx)
+<pre><code class="language-php">function xExplode($xx)
 {
    return explode(' ', $xx);
 }
 
-function xJoin($xx)
+function xImplode($xx)
 {
-   return join(' ', $xx);
+   return implode(' ', $xx);
 }
 
-xSplit('Pemrograman Berorientasi Objek')   // ['Pemrograman', 'Berorientasi', 'Objek']
-xJoin(['js', 'php', 'py'])   // js php py
+xExplode('Pemrograman Berorientasi Objek')   // ['Pemrograman', 'Berorientasi', 'Objek']
+xImplode(['js', 'php', 'py'])   // js php py
 </code></pre>
 <p><br/></p>
 <h5 id="python">Python</h5>
 <pre><code class="language-python">def xSplit(xx):
-   return xx.split()
+   return xx.split(' ')
 
 def xJoin(xx):
    return ' '.join(xx)
