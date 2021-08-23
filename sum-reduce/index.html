@@ -59,15 +59,11 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../map/">Map</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../map-filter/">Map dan Filter</a>
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../filter/">Filter</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../reverse/">Reverse</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../sort-reverse/">Sort dan Reverse</a>
                     </li>
                 </ul>
                 <ul class="current">
@@ -143,7 +139,7 @@
 <p><br/></p>
 <h5 id="javascript">JavaScript</h5>
 <pre><code class="language-javascript">function xReduce(xx) {
-   return xx.reduce((acc, curr) =&gt; acc + curr);
+   return xx.reduce((a, b) =&gt; a + b);
 }
 
 xReduce([1, 2, 3, 4, 5])   // 15
@@ -157,7 +153,7 @@ xReduce([1, 2, 3, 4, 5])   // 15
 
 function xReduce($xx)
 {
-   return array_reduce($xx, function($a, $b) { return $a + $b; });
+   return array_reduce($xx, fn($a, $b) =&gt; $a + $b);
 }
 
 xSum([1, 2, 3, 4, 5])   // 15
@@ -185,7 +181,7 @@ xReduce([1, 2, 3, 4, 5])   # 15
         <a href="../push-pop/" class="btn btn-neutral float-right" title="Push dan Pop">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../reverse/" class="btn btn-neutral" title="Reverse"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../sort-reverse/" class="btn btn-neutral" title="Sort dan Reverse"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -213,7 +209,7 @@ xReduce([1, 2, 3, 4, 5])   # 15
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../reverse/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../sort-reverse/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../push-pop/" style="color: #fcfcfc">Next &raquo;</a></span>

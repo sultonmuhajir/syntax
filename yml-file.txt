@@ -6,9 +6,8 @@ nav:
 - Template Literal : index.md
 - Operator Ternary : operator-ternary.md
 - Length : length.md
-- Map : map.md
-- Filter : filter.md
-- Reverse : reverse.md
+- Map dan Filter : map-filter.md
+- Sort dan Reverse : sort-reverse.md
 - Sum dan Reduce : sum-reduce.md
 - Push dan Pop : push-pop.md
 - Split dan Join : split-join.md

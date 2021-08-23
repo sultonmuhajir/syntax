@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Map - Syntax</title>
+  <title>Sort dan Reverse - Syntax</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Map";
-    var mkdocs_page_input_path = "map.md";
+    var mkdocs_page_name = "Sort dan Reverse";
+    var mkdocs_page_input_path = "sort-reverse.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -58,8 +58,12 @@
                     <li class="toctree-l1"><a class="reference internal" href="../length/">Length</a>
                     </li>
                 </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../map-filter/">Map dan Filter</a>
+                    </li>
+                </ul>
                 <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Map</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Sort dan Reverse</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#javascript">JavaScript</a>
     </li>
@@ -68,14 +72,6 @@
     <li class="toctree-l2"><a class="reference internal" href="#python">Python</a>
     </li>
     </ul>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../filter/">Filter</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../reverse/">Reverse</a>
                     </li>
                 </ul>
                 <ul>
@@ -127,7 +123,7 @@
     
       
     
-    <li>Map</li>
+    <li>Sort dan Reverse</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -139,30 +135,46 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="map">Map</h1>
+                <h1 id="sort-dan-reverse">Sort dan Reverse</h1>
 <p><br/></p>
 <h5 id="javascript">JavaScript</h5>
-<pre><code class="language-javascript">function xMap(xx) {
-   return xx.map(i =&gt; i ** 2);
+<pre><code class="language-javascript">function xSort(xx) {
+   return xx.sort((a, b) =&gt; a - b);
 }
 
-xMap([1, 2, 3, 4, 5])   // [1, 4, 9, 16, 25]
+function xReverse(xx) {
+   return xx.reverse();
+}
+
+xSort([3, 5, 1, 4, 2])   // [1, 2, 3, 4, 5]
+xReverse([1, 2, 3, 4, 5])   // [5, 4, 3, 2, 1]
 </code></pre>
 <p><br/></p>
 <h5 id="php">PHP</h5>
-<pre><code class="language-php">function xMap($xx)
+<pre><code class="language-php">function xSort($xx)
 {
-   return array_map(function($i) { return $i ** 2; }, $xx);
+   sort($xx);
+   return $xx;
 }
 
-xMap([1, 2, 3, 4, 5])   // [1, 4, 9, 16, 25]
+function xReverse($xx)
+{
+   return array_reverse($xx);
+}
+
+xSort([3, 5, 1, 4, 2])   // [1, 2, 3, 4, 5]
+xReverse([1, 2, 3, 4, 5])   // [5, 4, 3, 2, 1]
 </code></pre>
 <p><br/></p>
 <h5 id="python">Python</h5>
-<pre><code class="language-python">def xMap(xx):
-   return list(map(lambda i: i ** 2, xx))
+<pre><code class="language-python">def xSort(xx):
+   return sorted(xx)
 
-xMap([1, 2, 3, 4, 5])   # [1, 4, 9, 16, 25]
+def xReverse(xx):
+   return list(reversed(xx))
+
+xSort([3, 5, 1, 4, 2])   # [1, 2, 3, 4, 5]
+xReverse([1, 2, 3, 4, 5])   # [5, 4, 3, 2, 1]
 </code></pre>
               
             </div>
@@ -171,10 +183,10 @@ xMap([1, 2, 3, 4, 5])   # [1, 4, 9, 16, 25]
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../filter/" class="btn btn-neutral float-right" title="Filter">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../sum-reduce/" class="btn btn-neutral float-right" title="Sum dan Reduce">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../length/" class="btn btn-neutral" title="Length"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../map-filter/" class="btn btn-neutral" title="Map dan Filter"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -202,10 +214,10 @@ xMap([1, 2, 3, 4, 5])   # [1, 4, 9, 16, 25]
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../length/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../map-filter/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../filter/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../sum-reduce/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -59,15 +59,11 @@
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../map/">Map</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../map-filter/">Map dan Filter</a>
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../filter/">Filter</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../reverse/">Reverse</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../sort-reverse/">Sort dan Reverse</a>
                     </li>
                 </ul>
                 <ul>
@@ -150,8 +146,13 @@ function xJoin(xx) {
    return xx.join(' ');
 }
 
+function strSplit(xx) {
+   return xx.split('');
+}
+
 xSplit('Pemrograman Berorientasi Objek')   // ['Pemrograman', 'Berorientasi', 'Objek']
 xJoin(['js', 'php', 'py'])   // js php py
+strSplit('Hello')   // ['H', 'e', 'l', 'l', 'o']
 </code></pre>
 <p><br/></p>
 <h5 id="php">PHP</h5>
@@ -165,8 +166,14 @@ function xImplode($xx)
    return implode(' ', $xx);
 }
 
+function strSplit($xx)
+{
+   return str_split($xx);
+}
+
 xExplode('Pemrograman Berorientasi Objek')   // ['Pemrograman', 'Berorientasi', 'Objek']
 xImplode(['js', 'php', 'py'])   // js php py
+strSplit('Hello')   // ['H', 'e', 'l', 'l', 'o']
 </code></pre>
 <p><br/></p>
 <h5 id="python">Python</h5>
@@ -176,8 +183,12 @@ xImplode(['js', 'php', 'py'])   // js php py
 def xJoin(xx):
    return ' '.join(xx)
 
+def strSplit(xx):
+   return list(xx)
+
 xSplit('Pemrograman Berorientasi Objek')   # ['Pemrograman', 'Berorientasi', 'Objek']
 xJoin(['js', 'php', 'py'])   # js php py
+strSplit('Hello')   # ['H', 'e', 'l', 'l', 'o']
 </code></pre>
               
             </div>
